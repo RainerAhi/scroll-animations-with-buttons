@@ -63,20 +63,20 @@ export default function Model(props) {
         <mesh geometry={nodes.Cube004_1.geometry} material={materials.Material} />
         <mesh geometry={nodes.Cube004_2.geometry} material={materials.Window} />
       </group>
-      <mesh geometry={nodes.Cube004.geometry} material={nodes.Cube004.material} position={[1.678, 4.811, -3.455]} />
+      <mesh onClick={handleWhiteButtonClick} geometry={nodes.Cube004.geometry} material={nodes.Cube004.material} position={[5.678, 4.811, -3.455]} />
       <mesh geometry={nodes.Cube005.geometry} material={materials['Material.002']} position={[1.678, 4.811, -3.455]} />
       <mesh geometry={nodes.Plane009.geometry} material={materials['Material.002']} position={[2.404, 0.799, 1.834]} />
       <mesh geometry={nodes.Plane010.geometry} material={materials['Material.002']} position={[2.404, 0.799, 1.834]} />
       <mesh geometry={nodes.Plane011.geometry} material={materials['Material.004']} position={[-0.956, 3.646, -1.676]} />
       <mesh geometry={nodes.Circle.geometry} material={materials['Material.005']} position={[2.721, 2.925, 2.948]} scale={0.823}/>
-      <mesh geometry={nodes.Circle001.geometry} material={materials['Material.005']} position={[1.808, 2.925, 1.561]} scale={0.823} >
+      <mesh onClick={handleWhiteButtonClick} geometry={nodes.Circle001.geometry} material={materials['Material.005']} position={[1.808, 2.925, 1.561]} scale={2} >
       <Html
       as="div"
       zIndexRange={ [100, 0] }
       distanceFactor={5}
       wrapperClass=""
       >
-        <div className='white-button' onClick={handleWhiteButtonClick}></div>
+        <div className='white-button'></div>
       </Html>
       </mesh>
       <mesh geometry={nodes.Circle002.geometry} material={materials['Material.003']} position={[2.713, 2.925, 0.738]} scale={0.923} />
